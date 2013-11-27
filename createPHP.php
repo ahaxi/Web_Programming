@@ -23,18 +23,18 @@
 			$newphp=$name."_".$m.".php";//cpu_0;cpu_1,etc..
 			$fh=fopen($newphp,"w");
 		$content='<?php 
-session_start(); 
-?><html>
-<head>
-<title>'.$name.'</title>
-</head>
-<body>
-<?php
-$name="'.$name.'";
-$itemName=\''.$newrow[1].'\';
-$price="'.$newrow[2].'";
-$itemNumber="'.$newrow[0].'";
-$array=array($itemName,$price,$itemNumber);
+			session_start(); 
+			?><html>
+			<head>
+			<title>'.$name.'</title>
+			</head>
+			<body>
+			<?php
+			$name="'.$name.'";
+			$itemName=\''.$newrow[1].'\';
+			$price="'.$newrow[2].'";
+			$itemNumber="'.$newrow[0].'";
+			$array=array($itemName,$price,$itemNumber);
 			if(isset($_POST[\'add\'])){
 			if (!isset($_SESSION[\'info\'])) 
 			{     
@@ -69,15 +69,15 @@ $array=array($itemName,$price,$itemNumber);
 				}
 			
 			}
-$array=array();
-if(isset($_POST[\'check\'])){
-if(!isset($_SESSION[\'user\'])){
-printf("<script>window.open(\'login.php\')</script>");
-}
-else{
-printf("<script>location.href=\'summary.php\'</script>");
-}
-}	 
+			$array=array();
+			if(isset($_POST[\'check\'])){
+			if(!isset($_SESSION[\'user\'])){
+			printf("<script>window.open(\'login.php\')</script>");
+			}
+			else{
+			printf("<script>location.href=\'summary.php\'</script>");
+			}
+			}	 
 		?>
 		<div><IMG src="/images/'.$name.'/'.$newrow[0].'.jpg">
 		</div>
