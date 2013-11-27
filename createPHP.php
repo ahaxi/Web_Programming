@@ -82,31 +82,31 @@
 		<div><IMG src="/images/'.$name.'/'.$newrow[0].'.jpg">
 		</div>
 		<div>
-<form method="post" action="'.$newphp.'">
-<table>
-<tr><td>Price</td><td>'.$newrow[2].'</td></tr>
-<tr><td>Item#</td><td>'.$newrow[0].'</td></tr>
-<tr><td>Item Name</td><td>'.$newrow[1].'</td></tr>
-<tr><td>Detail description</td><td>'.$newrow[4].'</td></tr>
-<tr><td>The quantity to buy</td><td><select name="select">
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
-  <option value="4">4</option>
-  <option value="5">5</option>
-</select>
-</td></tr>
-<a href="welcome.php">Return to Main Menu</a>
-</table>
-
-<table>
-<tr><input rowspan="2" type="submit" name="add" value="Add to Cart" /></tr>
-<tr><input rowspan="2" type="submit" name="check" value="Check Out" /><tr>
-</table>
-</form>
-</div>
-</body>
-</html>';
+			<form method="post" action="'.$newphp.'">
+			<table>
+			<tr><td>Price</td><td>'.$newrow[2].'</td></tr>
+			<tr><td>Item#</td><td>'.$newrow[0].'</td></tr>
+			<tr><td>Item Name</td><td>'.$newrow[1].'</td></tr>
+			<tr><td>Detail description</td><td>'.$newrow[4].'</td></tr>
+			<tr><td>The quantity to buy</td><td><select name="select">
+			  <option value="1">1</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			  <option value="5">5</option>
+			</select>
+			</td></tr>
+			<a href="welcome.php">Return to Main Menu</a>
+			</table>
+			
+			<table>
+			<tr><input rowspan="2" type="submit" name="add" value="Add to Cart" /></tr>
+			<tr><input rowspan="2" type="submit" name="check" value="Check Out" /><tr>
+			</table>
+			</form>
+			</div>
+			</body>
+			</html>';
 			
 			fwrite($fh,$content);
 			fclose($fh);
