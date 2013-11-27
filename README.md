@@ -1,7 +1,7 @@
 Web_Programming
 ========================
 This is the final project for my CSE 252 Web Programming course.
-Two other teammates: Guanjie Xie, Ziliang Yuan
+Two other teammates: Guanjie Xie, Ziliang Yuan.
 I wrote the php programming part except css.
 Here is our final report.
 
