@@ -2,7 +2,6 @@ Web_Programming
 ========================
 This is the final project for my CSE 252 Web Programming course.
 Two other teammates: Guanjie Xie, Ziliang Yuan.
-I wrote the php programming part except css.
 Here is our final report.
 
 We chose to make a computer parts web application for our final project. This web application is formed by 2 major parts; Front end and Back end. The front end is facilitated with PHP while the back end is supported by mysql.
